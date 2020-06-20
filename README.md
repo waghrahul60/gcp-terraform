@@ -1,2 +1,2 @@
-# NewRepository
+# LogicalPrograms
 Demo repo
