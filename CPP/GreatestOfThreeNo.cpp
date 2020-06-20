@@ -7,7 +7,6 @@ using namespace std;
 int main()
 {
     int num1,num2,num3;
-    int result=0,i;
     cout<<"Enter lower limit :";
     cin>>num1;
     cout<<"Enter lower limit :";
