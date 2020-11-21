@@ -12,6 +12,7 @@ int main()
     cout<<"Enter lower limit :";
     cin>>LowerLimit;
     cout<<"Enter lower limit :";
+
     cin>>UpperLimit;
 
     for(i=LowerLimit ; i<=UpperLimit ; i++)
@@ -19,6 +20,7 @@ int main()
         result=result+i;
     }
     cout<<result;
+
 
     return 0;
 }

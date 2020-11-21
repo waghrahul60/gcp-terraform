@@ -9,6 +9,7 @@ void prime(int Num)
     int count=0;
     for(int i=1;i<=Num;i++)
     {
+
         if(Num%i == 0)
         {
             count++;
@@ -22,6 +23,7 @@ void prime(int Num)
 
 int main()
 {
+
     int UpperLimit,LowerLimit;
     int count=0,i,j;
 
@@ -29,6 +31,7 @@ int main()
     cin>>LowerLimit;
     cout<<"Enter a upper limit";
     cin>>UpperLimit;
+
 
     for(i=LowerLimit;i<=UpperLimit;i++)
     {

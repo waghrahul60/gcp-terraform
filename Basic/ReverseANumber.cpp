@@ -11,6 +11,7 @@ int main()
    cout<<"Enter a number : ";
    cin>>num;
 
+
     while (num > 0)
     {
        rem = num % 10;
@@ -19,6 +20,7 @@ int main()
     }
     
     cout<<"Reverse is : "<<reverse;
+
 
     return 0;
 }
