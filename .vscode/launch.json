@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch stringRotation",
+            "request": "launch",
+            "mainClass": "stringRotation",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindAllDuplicaates",
+            "request": "launch",
+            "mainClass": "FindAllDuplicaates",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch reverse",
+            "request": "launch",
+            "mainClass": "reverse",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
             "name": "Launch demo1",
             "request": "launch",
             "mainClass": "demo1",
