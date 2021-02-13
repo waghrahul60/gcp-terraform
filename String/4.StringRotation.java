@@ -7,7 +7,8 @@ class stringRotation{
     public static void main(String args[])
     {
         String str1= "AACD";
-        String str2= "ACDAC";
+        String str2= "ACDA";
+
 
         if(rotation(str1, str2))
         {

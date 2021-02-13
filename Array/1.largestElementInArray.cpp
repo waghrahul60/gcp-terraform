@@ -14,6 +14,6 @@ int main()
             Largest = arr[i];
         }
     }
-    cout<<"larhest Element Is :"<<Largest;
+    cout<<"largest Element Is :"<<Largest;
     return 0;
 }

@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GFG",
+            "request": "launch",
+            "mainClass": "GFG",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch DynamicArray",
+            "request": "launch",
+            "mainClass": "DynamicArray",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringChain",
+            "request": "launch",
+            "mainClass": "StringChain",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Anagram",
+            "request": "launch",
+            "mainClass": "Anagram",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch matrix",
+            "request": "launch",
+            "mainClass": "matrix",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
             "name": "Launch stringRotation",
             "request": "launch",
             "mainClass": "stringRotation",
