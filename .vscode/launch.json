@@ -6,6 +6,132 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BracketMatcher",
+            "request": "launch",
+            "mainClass": "Practice.BracketMatcher",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Practice.Main",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array2",
+            "request": "launch",
+            "mainClass": "Practice.Array2",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch array3",
+            "request": "launch",
+            "mainClass": "Practice.array3",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch DesOrder",
+            "request": "launch",
+            "mainClass": "Practice.DesOrder",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch t2",
+            "request": "launch",
+            "mainClass": "Practice.t2",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch map",
+            "request": "launch",
+            "mainClass": "map",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fibo",
+            "request": "launch",
+            "mainClass": "Fibo",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxString",
+            "request": "launch",
+            "mainClass": "MaxString",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch anagramNorm",
+            "request": "launch",
+            "mainClass": "anagramNorm",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch speed",
+            "request": "launch",
+            "mainClass": "speed",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch t2",
+            "request": "launch",
+            "mainClass": "t2",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch array3",
+            "request": "launch",
+            "mainClass": "array3",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array2",
+            "request": "launch",
+            "mainClass": "Array2",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arrayt",
+            "request": "launch",
+            "mainClass": "Arrayt",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch thread",
+            "request": "launch",
+            "mainClass": "thread",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch BracketMatcher",
+            "request": "launch",
+            "mainClass": "BracketMatcher",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "LogicalPrograms_dc2f92e4"
+        },
+        {
+            "type": "java",
             "name": "Launch GFG",
             "request": "launch",
             "mainClass": "GFG",
