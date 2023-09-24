@@ -1,2 +1,1 @@
-# LogicalPrograms
-Demo repo
+# This is gcp DevOps Project
