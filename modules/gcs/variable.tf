@@ -74,7 +74,7 @@ variable "iam_roles" {
     validation {
       condition = alltrue(
         [
-            for k in keys(var.iam_roles) : contains(["roles/storage.admin", "roles/storage.objectAdmin", "roles/storage.objectCreator", "roles/storage.objectViewer", "roles/storage.legacyBucketOwner", "roles/storage.legacyBucketReader", "roles/storage.legacyBucketWriter", "roles/storage.legacyObjectOwner", "roles/storage.legacyObjectReader" ])
+            for k in keys(var.iam_roles) : contains(["roles/storage.admin", "roles/storage.objectAdmin", "roles/storage.objectCreator", "roles/storage.objectViewer", "roles/storage.legacyBucketOwner", "roles/storage.legacyBucketReader", "roles/storage.legacyBucketWriter", "roles/storage.legacyObjectOwner", "roles/storage.legacyObjectReader" ], k)
         ]
       )
       error_message = "only roles/storage.admin, roles/storage.objectAdmin, roles/storage.objectCreator, roles/storage.objectViewer, roles/storage.legacyBucketOwne, roles/storage.legacyBucketReader, roles/storage.legacyBucketWriter, roles/storage.legacyObjectOwner, roles/storage.legacyObjectReader allwod"
@@ -90,7 +90,7 @@ variable "labels" {
   validation {
     condition = alltrue([
         for t in [
-            "user","owner","entity","region"
+            "user","owner","env","region"
         ] : contains(keys(var.labels), t)
     ])
     error_message = "pls include all manderatory tags"
