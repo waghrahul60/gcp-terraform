@@ -6,7 +6,7 @@ locals {
     environment = local.environment
     name        = var.instance_name
   }
-
+  
   user_labels = merge(local.default_labels, var.labels)
 
   database_type = regex("[^_]+", var.db_version)
