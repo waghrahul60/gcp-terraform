@@ -37,7 +37,7 @@ locals {
 
 
   # Example value, you can adjust or replace with your actual point_in_time_recovery_enabled
-  point_in_time_recovery_enabled = true
+  point_in_time_recovery_enabled = false
 
   iam_users = local.database_type == "SQLSERVER" ? [] : [
     for u in var.iam_user_emails : {

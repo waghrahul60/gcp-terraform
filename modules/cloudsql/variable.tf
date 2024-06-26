@@ -6,6 +6,7 @@ variable "project_id" {
 variable "private_network" {
   description = "The name of the private network."
   type        = string
+  default = "default"
 }
 
 variable "instance_name" {
@@ -29,17 +30,19 @@ variable "database_version" {
 variable "tier" {
   description = "The machine tier (e.g., db-n1-standard-1) for the SQL database instance."
   type        = string
-  default     = "db-custom-2-7680"
+  default     = "db-custom"
 }
 
 variable "deletion_protection" {
   description = "Whether deletion protection is enabled for the SQL database instance."
   type        = bool
+  default = true
 }
 
 variable "availability_type" {
   description = "The availability type for the SQL database instance."
   type        = string
+  default = "REGIONAL"
 }
 
 variable "disk_autoresize" {
@@ -50,21 +53,30 @@ variable "disk_autoresize" {
 variable "disk_type" {
   description = "The type of disk for the SQL database instance."
   type        = string
+  default = "PD_SSD"
 }
 
+variable "disk_size" {
+  description = "The type of disk for the SQL database instance."
+  type        = number
+  default = 10
+}
 variable "zone" {
   description = "The primary zone for the SQL database instance."
   type        = string
+  default = ""
 }
 
 variable "secondary_zone" {
   description = "The secondary zone for the SQL database instance."
   type        = string
+  default = ""
 }
 
 variable "backup_enabled" {
   description = "Whether backups are enabled for the SQL database instance."
   type        = bool
+  default = true
 }
 
 variable "backup_location" {
@@ -80,16 +92,19 @@ variable "backup_start_time" {
 variable "transaction_log_retention_days" {
   description = "The number of days transaction logs are retained for the SQL database instance."
   type        = number
+  default = 2
 }
 
 variable "retained_backups" {
   description = "The number of retained backups for the SQL database instance."
   type        = number
+  default = 4
 }
 
 variable "retention_unit" {
   description = "The unit of retention for backups (e.g., days, weeks, months) for the SQL database instance."
   type        = string
+  default = "COUNT"
 }
 
 variable "maintenance_window" {
@@ -100,7 +115,7 @@ variable "maintenance_window" {
     update_track = string
   }))
   default = [{
-    day = 6, hour = 16, update_track = "canary"
+    day = 2, hour = 6, update_track = "canary"
   }]
 }
 
@@ -112,19 +127,28 @@ variable "insights_config" {
     recorecord_application_tags = bool
     recorecord_client_address   = bool
   })
+  default = {
+    query_insights_enabled = true
+    query_string_length = 500
+    recorecord_application_tags = false
+    recorecord_client_address = false
+  }
 }
 
 variable "root_password" {
   description = "The root password for the SQL database instance."
   type        = string
+  default = null
+  sensitive = true
 }
 
 variable "database_flags" {
   description = "Custom database flags for the SQL database instance."
-  type = map(object({
+  type = list(object({
     name  = string
     value = string
   }))
+  default = []
 }
 
 variable "db_version" {
@@ -134,6 +158,8 @@ variable "db_version" {
 
 
 variable "bcakup_start_time" {
+  description = "Backup start time added here"
+  default = "00:00"
 
 }
 
@@ -143,7 +169,7 @@ variable "labels" {
     condition = alltrue([
       for t in [
         "user", "region", "service"
-      ] : contains(key(var.labels), t)
+      ] : contains(keys(var.labels), t)
 
     ])
     error_message = "pls include all mandatory labels like user,region,service"
@@ -157,7 +183,7 @@ variable "labels" {
 variable "iam_user_emails" {
   description = "list of IAM users"
   type        = list(string)
-  default     = []
+  default     = ["admin@iam.gserviceaccount.com"]
 }
 
 variable "db_names" {
@@ -165,15 +191,6 @@ variable "db_names" {
   type        = list(string)
 }
 
-variable "project_id" {
-  description = "The ID of the Google Cloud project."
-  type        = string
-}
-
-variable "deletion_protection" {
-  description = "Whether deletion protection is enabled for the SQL user."
-  type        = bool
-}
 
 variable "deletion_policy" {
   description = "Whether deletion protection is enabled for the SQL user."
